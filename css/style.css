@@ -21,11 +21,56 @@
     display: none;
     cursor: pointer;
 }
+
 #frame {
+    height: 95vh;
+    width: 40%;
     position: fixed;
-    top: 10vh;
-    left: 35%;
+    top: 3vh;
+    left: 31%;
     display: none;
+
+}
+.divleft {
+    position: fixed;
+}
+#right {
+    position: fixed;
+}
+
+.button-container {
+    display: table;
+    position: fixed;
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  
+}
+.fa-xmark {
+    font-size: 35px;
+    float:right ;
+    position: relative;
+    top: 5%;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    
+}
+.right {
+    position: relative;
+    float: right;
+    top: 40%;
+    cursor: pointer;
+}
+.left {
+    position:fixed;
+    float: left;
+    top: 40%;
+    cursor: pointer;
+
+ 
+
 }
 #frame > img {
     position: fixed;
@@ -57,7 +102,11 @@
     left: 10%;
     width: 80%;
     border-radius: 10px;
+    z-index: -1;
 }
+
+
+
 }
 @media screen and (min-width:768px) and (max-width: 992px){
 
@@ -68,6 +117,4 @@
         width: 70%;
         border-radius: 10px;
     }
-
 }
-
